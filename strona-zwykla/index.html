@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartosz Dzikowski">
+    <meta name="description" content="Strona o mnie">
+    <title>2025.02.05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="warcaby.html">Warcaby</a></li>
+                <li><a href="">strona 3</a></li>
+                <li><a href="omnie.html">O mnie</a></li>
+                <li><a href="https://paderek-knurow.pl/" target="_blank">szkoła</a></li>
+            </ul>
+        </nav>
+        <header><h1>Moją pasją jest programowanie! </h1>
+            <section>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/133px-ISO_C%2B%2B_Logo.svg.png" alt="c++ logo">
+                <img src="https://alternativeoo.com/uploads/c-programming-language-logo.png" alt="js logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/150px-Unofficial_JavaScript_logo_2.svg.png" alt="js logo">
+            </section>
+        </header>
+        <main>
+            <p id="form-question">Hej, czy chcesz poświęcić chwilę na przeprowadzenie anonimowej ankiety?</p>
+            <form action="#">
+                <fieldset>
+                    <legend></legend>
+                    Jakie języki znasz?
+                    <label for="C"><input type="checkbox" name="C" id="C">C</label>
+                    <label for="Cpp"><input type="checkbox" name="Cpp" id="Cpp">C++</label>
+                    <label for="Chash"><input type="checkbox" name="chash" id="Chash">C#</label>
+                    <label for="JS"><input type="checkbox" name="JS" id="JS">JavaScript</label>
+                    <label for="Python"><input type="checkbox" name="Python" id="Python">C</label>
+                    <label for="Java"><input type="checkbox" name="Java" id="Java">Java</label>
+                    <label for="Rust"><input type="checkbox" name="Rust" id="Rust">Rust</label>
+                    <label for="Lua"><input type="checkbox" name="Lua" id="Lua">Lua</label>
+                    <label for="PHP"><input type="checkbox" name="PHP" id="PHP">PHP</label>
+                    <label for="html"><input type="checkbox" name="html" id="html" disabled><s>HTML</s></label>
+
+                    Czy sądzisz, że w niedalekiej przyszłości AI wyprze programistów?
+                    <label for="tak"><input type="radio" name="ai" id="tak" checked>Tak</label>
+                    <label for="nie"><input type="radio" name="ai" id="nie">Nie</label>
+
+                    <button type="submit">Wyślij</button>
+                </fieldset>
+            </form>            
+        </main>
+        <footer></footer>
+    </div>
+    <script src="ankieta.js"></script>
+</body>
+</html>

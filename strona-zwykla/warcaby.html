@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartosz Dzikowski">
+    <meta name="description" content="Strona o mnie">
+    <title>Warcaby</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #plansza {
+            width: 800px;
+            height: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        #plansza button {
+            width: 60px;
+            height:60px;
+            border: none;
+            border-radius: 40px;
+        }
+        .pole {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 300ms;
+            width: 100px;
+            height: 100px;
+        }
+        .czarne {
+            background-color: brown;            
+        }
+        .biale {
+            background-color: white;
+        }
+        .zaznaczony {
+            background-color: green;
+        }
+        .bialyp {
+            background-color: white;
+        }
+        .czarnyp {
+            background-color: black;
+        }
+        .move_button {
+            background-color: navy;
+        }
+        #punkty {
+            color:white;
+            font-size: 2rem;
+        }
+        .reset_button {
+            font-size: 3rem;
+            padding: 0 0.6rem;
+            border-radius: 40px;
+        }
+        .info_section {
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="warcaby.html">Warcaby</a></li>
+                <li><a href="">strona 3</a></li>
+                <li><a href="omnie.html">O mnie</a></li>
+                <li><a href="https://paderek-knurow.pl/" target="_blank">szkoła</a></li>
+            </ul>
+        </nav>
+        <header><h1>Te warcaby są dosyć prymitywne, gdyż zrobiłem je w jeden wieczór, ale myślę że mogę je tu wstawić♥</h1></header>
+        <div id="plansza"></div>
+        <div class="info_section">
+            <button class="reset_button" onclick="restartuj_wszytko()">Restart</button>
+            <p id="punkty"></p>
+        </div>
+    </div>
+        <script src="warcaby.js"></script>
+</body>
+</html>
