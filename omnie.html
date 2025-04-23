@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartosz Dzikowski">
+    <meta name="description" content="Strona o mnie">
+    <title>O mnie</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            width: 10rem;
+        }
+        video {
+            width: 15rem;
+        }
+        .bigger_image {
+            display: block;
+            width: 70vh;
+        }
+        .container>div>*{
+            background-color: #333;
+            border-radius: 30px;
+            color: #FFF;
+            padding: 2rem;
+        }
+        @media (width < 800px) {
+            .container>div>*{ 
+                padding: 1rem;
+                width: calc(100vw - 7rem);
+                margin: .1rem;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="hamburger">☰</li>
+                <li><a href="index.html"><img src="home.png" alt="home_icon"> <span>strona główna</span></a></li>
+                <li><a href="warcaby.html"><img src="console.png" alt="controller_icon"> <span>warcaby</span></a></li>
+                <li><a href="jezyki.html"><img src="cmd.png" alt="cmd_icon">  <span>więcej o językach</span></a></li>
+                <li><a href="omnie.html"><img src="user.png" alt="user_icon"> <span>o mnie</span></a></li>
+                <li><a href="https://paderek-knurow.pl/" target="_blank"><img src="school.png" alt="school_icon"> <span>szkoła</span></a></li>
+            </ul>
+        </nav>
+        <div>
+            <header><h1>O Mnie:</h1></header>
+            <main>
+                <p>Cześć! Nazywam się Bartek Dzikowski i pasjonuję się programowaniem. Najwięcej frajdy sprawia mi praca z C i C++, szczególnie przy projektach z mikrokontrolerami oraz tworzeniu prostych gier i aplikacji. Lubię także budować aplikacje internetowe, głównie w JavaScripcie i PHP. Stale rozwijam swoje umiejętności, staram się nauczyć assembly, eksperymentuję z nowymi technologiami i szukam ciekawych wyzwań.</p>
+                <p>przykładowy mikrokontroler jaki posiadam: </p>
+                <img src="https://soldered.com/productdata/2015/06/352527-Edit.jpg" alt="mikrokontroler ATmega328P">
+                
+                <p>Na filmie można zobaczyć program jaki można zrobić używając bardzo nie wiele bo tylko: prostego wyświetlacza, potencjometra (dla ustawienia kontrastu wyświetlacza), joysticka oraz ATmega328p na pokładzie Arduino Uno</p>
+                <video src="VID20250420203621.mp4" controls muted></video>
+            
+                <p>Moje zdjęcie</p>
+                <img src="moje_zdj.jpg" alt="moje zdjecie">
+                
+            </main>
+        </div>
+        <footer>
+            <div>
+                <p id="timer"></p>
+                <a href="http://github.com/Dzik1507" target="_blank">GitHub</a>
+                <a href="https://www.hoyolab.com/accountCenter/postList?id=147371841" target=_blank>HoyoLab</a>
+                <a href="https://makerworld.com/en/@dzik1057" target="_blank">MakerWorld</a>
+            </div>
+            <div>
+                <p>Bartosz Dzikowski </p>
+                <p id="mail">bartosz.dzikowski2137@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+    <script src="resize_imgs.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="time.js"></script>
+</body>
+</html>

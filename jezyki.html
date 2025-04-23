@@ -1,0 +1,106 @@
+<!-- Zrobić strzałki i się będzie zmieniała ikonka języka i wyprintowanie witaj! np. ikonka c i printf(%s, "Witaj!") -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartosz Dzikowski">
+    <meta name="description" content="Strona o mnie i moim hobby jakim jest programowanie">
+    <link rel="stylesheet" href="style.css">
+    <title>Więcej o językach</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="hamburger">☰</li>
+                <li><a href="index.html"><img src="home.png" alt="home_icon"> <span>strona główna</span></a></li>
+                <li><a href="warcaby.html"><img src="console.png" alt="controller_icon"> <span>warcaby</span></a></li>
+                <li><a href="jezyki.html"><img src="cmd.png" alt="cmd_icon">  <span>więcej o językach</span></a></li>
+                <li><a href="omnie.html"><img src="user.png" alt="user_icon"> <span>o mnie</span></a></li>
+                <li><a href="https://paderek-knurow.pl/" target="_blank"><img src="school.png" alt="school_icon"> <span>szkoła</span></a></li>
+            </ul>
+        </nav>
+        <div>
+            <header></header>
+            <main>
+                <article>
+                    <p>Oto opisy języków programowania, które w jakimś stopniu znam:</p>
+                    <div class="languages_description">
+                        <div>
+                            <h2>C</h2>
+                            <p>C to język programowania niskiego poziomu, wykorzystywany głównie do programowania systemowego, sterowników, systemów operacyjnych i aplikacji wymagających wysokiej wydajności. Jest językiem proceduralnym, ze statycznym typowaniem i ręcznym zarządzaniem pamięcią.</p>
+                        </div>
+                        <div>
+                            <h2>C++</h2>
+                            <p>C++ to rozwinięcie języka C, wprowadzające programowanie obiektowe. Łączy cechy języka niskiego i wysokiego poziomu. Umożliwia zarówno programowanie proceduralne, jak i obiektowe. Często używany w tworzeniu gier, aplikacji desktopowych, systemów wbudowanych i oprogramowania wymagającego dużej wydajności.</p>
+                        </div>
+                        <div>
+                            <h2>JavaScript</h2>
+                            <p>JavaScript to dynamiczny język skryptowy działający głównie po stronie klienta (przeglądarki internetowej), ale także po stronie serwera (Node.js). Służy do tworzenia interaktywnych stron WWW, animacji, obsługi zdarzeń i dynamicznego ładowania treści. Jest jednowątkowy, ale wspiera programowanie asynchroniczne.</p>
+                        </div>
+                        <div>
+                            <h2>PHP</h2>
+                            <p>PHP to język skryptowy działający po stronie serwera, zaprojektowany do tworzenia dynamicznych stron internetowych. Łatwy do nauczenia i powszechnie używany w połączeniu z bazami danych (np. MySQL). Obsługuje programowanie obiektowe i proceduralne.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <p>Oto porównanie języków programowania, którymi się posługuję:</p>
+                    <div style="overflow:auto; width: 100%;">
+                        <table>
+                            <tr>
+                                <th>Nazwa</th>
+                                <th>Typ</th>
+                                <th>Typowanie zmiennych</th>
+                                <th>Prędkość</th>
+                            </tr>
+                            <tr>
+                                <th><a href="https://pl.wikipedia.org/wiki/C_(j%C4%99zyk_programowania)">C</a></th>
+                                <th>Kompilowany</th>
+                                <th>Statyczne</th>
+                                <th>Bardzo szybki</th>
+                            </tr>
+                            <tr>
+                                <th><a href="https://pl.wikipedia.org/wiki/C%2B%2B">C++</a></th>
+                                <th>Kompilowany</th>
+                                <th>Statyczne</th>
+                                <th>Szybki</th>
+                            </tr>
+                            <tr>
+                                <th><a href="https://pl.wikipedia.org/wiki/JavaScript">JavaScript</a></th>
+                                <th>Interpretowany</th>
+                                <th>Dynamiczne</th>
+                                <th>Taki sobie (kompilowane programy działają szybciej)</th>
+                            </tr>
+                            <tr>
+                                <th><a href="https://pl.wikipedia.org/wiki/PHP">PHP</a></th>
+                                <th>Interpretowany</th>
+                                <th>Dynamiczne</th>
+                                <th>Taki sobie (kompilowane programy działają szybciej)</th>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+            </main>
+        </div>
+        <footer>
+            <div>
+                <p id="timer"></p>
+                <a href="http://github.com/Dzik1507" target="_blank">GitHub</a>
+                <a href="https://www.hoyolab.com/accountCenter/postList?id=147371841" target=_blank>HoyoLab</a>
+                <a href="https://makerworld.com/en/@dzik1057" target="_blank">MakerWorld</a>
+            </div>
+            <div>
+                <p>Bartosz Dzikowski </p>
+                <p id="mail">bartosz.dzikowski2137@gmail.com</p>
+            </div>
+        </footer>
+    </div>    
+    <script src="hamburger.js"></script>
+    <script src="time.js"></script>
+</body>
+</html>
+

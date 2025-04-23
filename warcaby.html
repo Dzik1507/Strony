@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartosz Dzikowski">
+    <meta name="description" content="Strona o mnie">
+    <title>Warcaby</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #plansza {
+            width: 80vmin;
+            height: 80vmin;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            border: 2px solid #000;
+        }
+        #plansza button {
+            width: calc(80vmin/13.333333);
+            height: calc(80vmin/13.333333);
+            border: none;
+            border-radius: 40px;
+        }
+        .pole {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 300ms;
+            width: calc(80vmin/8); 
+            height: calc(80vmin/8); 
+        }
+        .czarne {
+            background-color: #a52a2a;            
+        }
+        .biale {
+            background-color: #ffffff;
+        }
+        .zaznaczony {
+            background-color: #008000;
+        }
+        .bialyp {
+            background-color: #ffffff;
+        }
+        .czarnyp {
+            background-color: #000000;
+        }
+        .move_button {
+            background-color: #000080;
+        }
+        #punkty {
+            color:#000;
+            font-size: 2rem;
+        }
+        .reset_button {
+            font-size: 3rem;
+            padding: 0 0.6rem;
+            border-radius: 40px;
+        }
+        .info_section {
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="hamburger">☰</li>
+                <li><a href="index.html"><img src="home.png" alt="home_icon"> <span>strona główna</span></a></li>
+                <li><a href="warcaby.html"><img src="console.png" alt="controller_icon"> <span>warcaby</span></a></li>
+                <li><a href="jezyki.html"><img src="cmd.png" alt="cmd_icon">  <span>więcej o językach</span></a></li>
+                <li><a href="omnie.html"><img src="user.png" alt="user_icon"> <span>o mnie</span></a></li>
+                <li><a href="https://paderek-knurow.pl/" target="_blank"><img src="school.png" alt="school_icon"> <span>szkoła</span></a></li>
+            </ul>
+        </nav>
+        <div>
+            <header><h1>Te warcaby są dosyć prymitywne, gdyż zrobiłem je w jeden wieczór, ale myślę że mogę je tu wstawić♥</h1></header>
+            <div id="plansza"></div>
+            <div class="info_section">
+                <button class="reset_button" onclick="restartuj_wszytko()">Restart</button>
+                <p id="punkty"></p>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p id="timer"></p>
+                <a href="http://github.com/Dzik1507" target="_blank">GitHub</a>
+                <a href="https://www.hoyolab.com/accountCenter/postList?id=147371841" target=_blank>HoyoLab</a>
+                <a href="https://makerworld.com/en/@dzik1057" target="_blank">MakerWorld</a>
+            </div>
+            <div>
+                <p>Bartosz Dzikowski </p>
+                <p id="mail">bartosz.dzikowski2137@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+        <script src="warcaby.js"></script>
+        <script src="hamburger.js"></script>
+        <script src="time.js"></script>
+</body>
+</html>
